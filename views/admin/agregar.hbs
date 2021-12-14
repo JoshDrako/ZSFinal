@@ -1,0 +1,23 @@
+<div class="container" style="margin-top: 90px; margin-bottom: 90px">
+    <div class="row">
+        <h2>Agregar historia</h2>
+        <form action="/admin/historias/agregar" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="titulo">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="subtitulo" name="subtitulo" placeholder="subtitulo"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="imagen">Imagen <input type="file" name="imagen" id="imagen"></label>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="cuerpo" name="cuerpo" placeholder="historia"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
+        </form>
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>

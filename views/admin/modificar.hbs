@@ -1,0 +1,30 @@
+<div class="container" style="margin-top: 90px; margin-bottom: 90px">
+    <div class="row">
+        <h2>Editar historia</h2>
+        <form action="/admin/historias/modificar" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="hidden" class="form-control" id="titulo" name="id" value="{{historias.id}}">
+                <input type="text" class="form-control" id="titulo" name="titulo" placeholder="titulo" value="{{historias.titulo}}">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="subtitulo" name="subtitulo" placeholder="subtitulo">{{historias.subtitulo}}</textarea>
+            </div>
+            <div class="mb-3">
+                <p>
+                    <label>Imagen: <input type="file" name="imagen" id="imagen"></label>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" value="1" id="img_delete"> Eliminar imagen actual</label>
+                        <input type="hidden" name="img_original" value="{{historias.img_id}}"/>
+                    </p>
+                </p>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="cuerpo" name="cuerpo" placeholder="historia">{{historias.cuerpo}}</textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Editar</button>
+        </form>
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>

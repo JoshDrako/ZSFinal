@@ -1,0 +1,16 @@
+<div class="container" style="margin-top: 90px; margin-bottom: 90px">
+    <div class="row">
+        <form action="/admin/login" method="post">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInput1" name="usuario" placeholder="usuario">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInput2" name="password" placeholder="password">
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
+        </form>
+        {{#if error}}
+        <p>Usuario o Contraseña incorrectos</p>
+        {{/if}}
+    </div>
+</div>

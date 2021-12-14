@@ -1,0 +1,36 @@
+<div class="contacto">
+    <h2>Completa el formulario</h2>
+    <form action="/contacto" method="post" class="formulario">
+        <p>
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" required />
+        </p>
+        <p>
+            <label for="">Email</label>
+            <input type="email" name="email" required/>
+        </p>
+        <p>
+            <label for="">Título</label>
+            <input type="text" name="titulo"/>
+        </p>
+        <p>
+            <label for="">Historia</label>
+            <textarea type="text" name="historia"></textarea>
+        </p>
+        <p class="centrar"><input type="submit"></p>
+    </form>
+    {{#if message}}
+        <p>{{message}}</p>
+    {{/if}}
+</div>
+<div class="redes">
+    <h2>Nuestras redes</h2>
+    <p>Tambien puedes seguirnos en:</p>
+    <ul class="enlaces">
+        <li>FB: <a href="https://www.facebook.com/zonasiniestrafm" target="_blank">@zonasiniestrafm</a></li>
+        <li>TikTok: <a href="https://vm.tiktok.com/ZMREWJMbG/" target="_blank">@zonasiniestra</a></li>
+        <li>YouTube: <a href="https://www.youtube.com/channel/UCPRiGpFTqKRv_saSah7CRXg" target="_blank">Zona
+                Siniestra</a></li>
+        <li>Twitter: <a href="https://twitter.com/ZonaSiniestra" target="_blank">@ZonaSiniestra</a></li>
+    </ul>
+</div>

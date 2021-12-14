@@ -1,0 +1,21 @@
+<h2>Historias</h2>
+<div class="buscador">
+    <form action="/historias" method="get">
+        <input type="search" name="q">
+        <button type="submit">buscar</button>
+    </form>
+</div>
+{{#each historias}}
+<div class="historias">
+    <h3>{{titulo}}</h3>
+    <h4>{{subtitulo}}</h4>
+    <img src="{{imagen}}" alt="{{titulo}}">
+    <p>{{{cuerpo}}}</p>
+    <hr />
+</div>
+{{/each}}
+{{#if is_search}}
+    {{#unless historias.length}}
+    <p>No hay resultados para "<u>{{q}}</u>"</p>
+    {{/unless}}
+{{/if}}

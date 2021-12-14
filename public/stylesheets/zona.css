@@ -1,0 +1,224 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: black;
+}
+
+header{
+    background-color: #640D11;
+    padding: 10px 10px;
+}
+
+header h1{
+    color: whitesmoke;
+    font-size: 45px;
+    font-weight: 200;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+}
+
+nav{
+    background-color: #360505;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 19%;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li:hover{
+    background-color: #C77323;
+}
+
+nav ul li a.activo{
+    background-color: #C77323;
+    color: black;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+h3, h4, h5, p, li{
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+a{
+    color: #C77323;
+}
+
+footer{
+    background-color: #808080;
+    padding: 0;
+    text-align: center;
+    clear: both;
+}
+
+/* inicio index */
+
+h2.staff{
+    text-align: center;
+}
+
+.integrantes{
+    display: flex;
+    text-align: center;
+}
+
+.integrantes img{
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.presentacion{
+    margin: 30px;
+    font-size: 18px;
+}
+
+/* fin index */
+
+/* inicio multi */
+
+.item{
+    box-sizing: border-box;
+    float: left;
+}
+
+.item1{
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
+    text-align: right;
+}
+
+/* fin multi */
+
+/* inicio tienda */
+
+.cosas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.venta{
+    width: 18%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.venta img{
+    max-width: 150px;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.venta h4,
+.venta h5,
+.venta h6{
+    margin: 0;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+ul{
+    text-align: left;
+    font-size: 15px;
+}
+
+.boton{
+    color: black;
+    font-size: 12px;
+    width: auto;
+}
+
+/* fin tienda */
+
+/* inicio historias */
+
+.historias{
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.buscador {
+    float: right;
+    position: relative;
+    bottom: 25px
+}
+
+/* fin historias */
+
+/* inicio contacto */
+
+.contacto,
+.redes{
+    width: 50%;
+}
+.contacto{
+    float: left;
+}
+
+.redes,
+.enlaces{
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    list-style: none;
+}
+
+.formulario label{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario input,
+.formulario textarea{
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 90%;
+    padding: 2px;
+    font-size: 22px;
+}
+
+.formulario textarea{
+    height: 200px;
+    resize: both;
+}
+
+.formulario input[type="submit"]{
+    width: auto;
+    color: black;
+    position: relative;
+    left: 35%;
+}
+/* fin contacto */
